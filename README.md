@@ -1,0 +1,5 @@
+- 👋 Hi, I’m @Shaniquaxyz
+- 👀 I’m interested in ... Lua scripting for roblox csgo hvh banging ur mom😎
+- 🌱 I’m currently learning ... Lua scripting
+- 💞️ I’m looking to collaborate on ... nun
+- 📫 How to reach me ... Shaniquà#3135
