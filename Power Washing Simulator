@@ -1,0 +1,50 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+local Window = OrionLib:MakeWindow({Name = "Omega Hub", HidePremium = false, SaveConfig = false, ConfigFolder = "nil"})
+--*Tabs*--
+local Credit_Tab = Window:MakeTab({
+	Name = "Credits",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+local Main_Tab = Window:MakeTab({
+	Name = "Main",
+	Icon = "rbxassetid://4483345998",
+	PremiumOnly = false
+})
+--*Sections*--
+local Section = Main_Tab:AddSection({
+	Name = "Main"
+})
+local Section = Credit_Tab:AddSection({
+	Name = "Credits"
+})
+--*Buttons*--
+Main_Tab:AddButton({
+	Name = "Infinite Water",
+	Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.RefillRemote:FireServer(true)
+  	end    
+})
+Main_Tab:AddButton({
+	Name = "Infinite Money",
+	Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.SurfaceCompleted:FireServer(math.huge, math.huge)
+  	end    
+})
+Main_Tab:AddButton({
+	Name = "Funny Dirt",
+	Callback = function()
+        game:GetService("ReplicatedStorage").Remotes.ClientFrameData:FireServer(math.huge , true, true, math.huge)
+  	end    
+})
+Credit_Tab:AddButton({
+	Name = "Destroy GUI",
+	Callback = function()
+        OrionLib:Destroy()
+  	end    
+})
+--*Text Label*--
+Credit_Tab:AddLabel("Made by Shaniquà#3135")
+Credit_Tab:AddLabel("Original Code made by Skays Box")
+--*DO NOT TOUCH*--
+OrionLib:Init()
